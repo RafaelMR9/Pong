@@ -7,6 +7,8 @@ const leftScoreBoard = document.getElementById('leftScore')
 const rightScoreBoard = document.getElementById('rightScore')
 const startGameButton = document.getElementById('startGame')
 const playAgainButton = document.getElementById('playAgain')
+const victoryScreen = document.getElementById('victoryScreen')
+const victoryMessage = document.getElementById('victoryMessage')
 
 let gameInterval
 let leftScore = 0, rightScore = 0
@@ -97,9 +99,6 @@ function resetBall() {
 }
 
 function displayVictory(winner) {
-    let victoryScreen = document.getElementById('victoryScreen')
-    let victoryMessage = document.getElementById('victoryMessage')
-
     victoryMessage.textContent = winner + " Venceu!"
     victoryScreen.style.display = 'flex'
 
@@ -112,7 +111,9 @@ function displayVictory(winner) {
 function checkGameOver() {
     if (leftScore >= 5 || rightScore >= 5) {
         clearInterval(gameInterval)
+
         let winner = leftScore >= 5 ? 'Jogador 1' : 'Jogador 2'
+        
         displayVictory(winner)
     }
 }

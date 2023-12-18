@@ -6,22 +6,23 @@
     <link rel="icon" type="image/png" href="favicon.png"/>
 </head>
 <body>
-    <div id="gameArea">
-        <div class="gameDivider"></div>
-        <div id="leftScore">0</div> 
-        <div id="rightScore">0</div>
-        <div id="playerPaddleLeft"></div>
-        <div id="playerPaddleRight"></div>
-        <div id="ball"></div>
-        <div id="introScreen">
-            <h1 id="display">PONG!</h1>
-            <p id="instructions">Use as teclas 'W' e 'S' e as setas 'cima' e 'baixo' para mover as barras.</p>
-            <p id="instructions2">O jogo termina quando um dos jogadores marcar 5 pontos.</p>
-            <button id="startGame">Começar Jogo</button>
+    <div id="gameArea" class="game-area">
+        <div class="game-divider"></div>
+        <div id="leftScore" class="score-board">0</div> 
+        <div id="rightScore" class="score-board">0</div>
+        <div id="playerPaddleLeft" class="paddle"></div>
+        <div id="playerPaddleRight" class="paddle"></div>
+        <div id="ball" class="ball"></div>
+        <div id="introScreen" class="modal-screen">
+            <h1 class="title-text">PONG!</h1>
+            <p class="instruction-text">Use as teclas 'W' e 'S' e as setas 'cima' e 'baixo' para mover as barras.</p>
+            <p class="instruction-text">A bola acelera aos poucos.</p>
+            <p class="instruction-text">O jogo termina quando um dos jogadores marcar 5 pontos.</p>
+            <button id="startGame" class="action-button">Começar Jogo</button>
         </div>
-        <div id="victoryScreen" style="display:none;">
-            <h1 id="victoryMessage"></h1>
-            <button id="playAgain">Jogar Novamente</button>
+        <div id="victoryScreen" class="modal-screen" style="display:none;">
+            <h1 id="victoryMessage" class="title-text"></h1>
+            <button id="playAgain" class="action-button">Jogar Novamente</button>
         </div>
     </div>
 
