@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pong</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+    <div id="gameArea">
+        <div class="gameDivider"></div>
+        <div id="leftScore">0</div> 
+        <div id="rightScore">0</div>
+        <div id="playerPaddleLeft"></div>
+        <div id="playerPaddleRight"></div>
+        <div id="ball"></div>
+        <div id="introScreen">
+            <h1 id="display">PONG!</h1>
+            <p id="instructions">Use as teclas 'W' e 'S' e as setas 'cima' e 'baixo' para mover as barras.</p>
+            <p id="instructions2">O jogo termina quando um dos jogadores marcar 5 pontos.</p>
+            <button id="startGame">Começar Jogo</button>
+        </div>
+        <div id="victoryScreen" style="display:none;">
+            <h1 id="victoryMessage"></h1>
+            <button id="playAgain">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
