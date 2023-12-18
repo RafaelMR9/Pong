@@ -12,7 +12,7 @@ const victoryMessage = document.getElementById('victoryMessage')
 
 let gameInterval
 let leftScore = 0, rightScore = 0
-let ballSpeedX = 2, ballSpeedY = 2
+let ballSpeedX = 3, ballSpeedY = 3
 let leftPaddleSpeed = 0, rightPaddleSpeed = 0
 
 function startGame() {
@@ -94,8 +94,8 @@ function resetBall() {
     ball.style.left = (gameAreaCenterX - ballDiameter / 2) + 'px'
     ball.style.top = (gameAreaCenterY - ballDiameter / 2) + 'px'
 
-    ballSpeedX = Math.random() > 0.5 ? 2 : -2
-    ballSpeedY = Math.random() > 0.5 ? 2 : -2   
+    ballSpeedX = Math.random() > 0.5 ? 3 : -3
+    ballSpeedY = Math.random() > 0.5 ? 3 : -3   
 }
 
 function displayVictory(winner) {
