@@ -12,7 +12,7 @@ const victoryMessage = document.getElementById('victoryMessage')
 
 let gameInterval
 let leftScore = 0, rightScore = 0
-let ballSpeedX = 3, ballSpeedY = 3
+let ballSpeedX = 4, ballSpeedY = 4
 let leftPaddleSpeed = 0, rightPaddleSpeed = 0
 
 function startGame() {
@@ -94,8 +94,8 @@ function resetBall() {
     ball.style.left = (gameAreaCenterX - ballDiameter / 2) + 'px'
     ball.style.top = (gameAreaCenterY - ballDiameter / 2) + 'px'
 
-    ballSpeedX = Math.random() > 0.5 ? 3 : -3
-    ballSpeedY = Math.random() > 0.5 ? 3 : -3   
+    ballSpeedX = Math.random() > 0.5 ? 4 : -4
+    ballSpeedY = Math.random() > 0.5 ? 4 : -4   
 }
 
 function displayVictory(winner) {
@@ -109,10 +109,10 @@ function displayVictory(winner) {
 }
 
 function checkGameOver() {
-    if (leftScore >= 5 || rightScore >= 5) {
+    if (leftScore >= 3 || rightScore >= 3) {
         clearInterval(gameInterval)
 
-        let winner = leftScore >= 5 ? 'Jogador 1' : 'Jogador 2'
+        let winner = leftScore >= 3 ? 'Jogador 1' : 'Jogador 2'
         
         displayVictory(winner)
     }
