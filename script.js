@@ -80,8 +80,10 @@ function updateScore() {
 
 function resetGame() {
     resetBall()
+
     leftScore = 0
     rightScore = 0
+    
     updateScore()
 }
 
