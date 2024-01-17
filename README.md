@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Aplicação web do jogo Pong, um jogo antigo de tênis de mesa que é jogado por dois jogadores. Vence o jogador que marcar 5 
+Aplicação web do jogo Pong, um jogo antigo de tênis de mesa que é jogado por dois jogadores. Vence o jogador que marcar 3
 pontos primeiro.
 
 ## Linguagens e Tecnologias
